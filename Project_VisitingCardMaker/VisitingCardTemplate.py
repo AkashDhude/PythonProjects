@@ -53,7 +53,7 @@ def addPPT(name = None,company_name=None, position_of_employee=None, email=None,
     p4.font.size = Pt(6)
 
     p5 = tf4.add_paragraph()
-    p5.text = f"Land : +91 20 22951317, Fax : 22951097, Cell: +91 {mobile_num}"
+    p5.text = f"Cell: +91 {mobile_num}"
     p5.font.size = Pt(6)
     p5.font.name = fontname
 
