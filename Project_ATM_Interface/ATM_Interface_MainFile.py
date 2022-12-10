@@ -231,6 +231,8 @@ class ATM:
         entered_amount = self.win5_1_entry1.get()
         if int(self.balance) < int(entered_amount):
             showwarning("Warning", f"Insufficient Funds!!!\nYour Balance is Rs.{self.balance}.")
+            self.win5_1_frame.pack_forget()
+            self.addWindow_5()
         else:
             self.balance = int(self.balance) - int(entered_amount)
             self.win5_1_frame.pack_forget()
