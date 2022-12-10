@@ -19,6 +19,7 @@ class ATM:
         self.input_text3 = StringVar()
         self.expression4 = ""
         self.input_text4 = StringVar()
+        
 ##################
     def click_Start(self):
         self.win1_frame.pack_forget()
@@ -393,14 +394,8 @@ class ATM:
         self.win5_3_button2 = CTkButton(master=numpad_frame4, text="BACK", command=lambda: self.click_back_5_3(), corner_radius=25, width=150, height=50, font=("helvatica", 20))
         self.win5_3_button2.grid(padx=10, pady=10, row=5, columnspan=3)
 
-
-
-
-
-
-
-
-
+        
+        
 
 w1 = ATM(root)
 w1.addWindow_1()
